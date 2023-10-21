@@ -6,6 +6,60 @@
   height: 40vmin;
   pointer-events: none;
 }
+.logo{
+  width: 1.5em;
+  height: 1.5em;
+}
+.drop-shadow {
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.3);
+}
+.custom-banner{
+  background: linear-gradient(90deg, rgba(116,151,223,1) 0%, rgba(135,119,229,1) 35%, rgba(155,119,230,1) 100%);
+}
+.billListContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.billListContainer .column1 {
+  flex: 60%;
+}
+
+.billListContainer .column2 {
+  flex: 40%;
+}
+
+.horizontalLine{
+  width: 100%;
+  background-color: #fd868c;
+  height: 0.4em;
+  border-radius: 0.5em;
+  margin-top: 1em;
+}
+
+.group-member-circle {
+  width: 30px;
+  height: 30px;
+  background-color: purple;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -10px;
+  position: relative;
+}
+
+.group-member-circle::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: 20px;
+  height: 30px;
+  background-color: white;
+  z-index: -1;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

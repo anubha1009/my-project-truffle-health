@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="flex">
     <LeftNavBar />
-    <div className="flex-grow bg-gray-100">
+    <div className="flex-grow bg-blue-50">
       <div>
       <TopNavBar />
       </div>

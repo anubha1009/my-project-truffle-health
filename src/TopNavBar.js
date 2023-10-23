@@ -21,7 +21,7 @@ const menuItems = [
 ]
 
 const TopNavBar = () => (
-  <nav className="flex items-center justify-between flex-wrap bg-blue-50 p-5">
+  <nav className="flex items-center justify-between flex-wrap bg-blue-50 p-5 mob-center">
     <div className="flex items-center flex-shrink-0 text-purple-500 mr-6">
       <span className="font-bold text-4xl tracking-tight text-custom-gray">Hello, </span>
       <span className="font-bold text-4xl tracking-tight text-purple-500">&nbsp;{name.split(' ')[0]}</span>
@@ -32,12 +32,12 @@ const TopNavBar = () => (
     <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
       <div className="text-sm lg:flex-grow">
       </div>
-      <div className='flex flex-row'>
+      <div className='flex flex-row mob-center'>
         {menuItems.map((item, index) => (
           <div key={index} className="text-sm flex items-center lg:flex-grow">
             <a href={item.link} className="flex mt-4 lg:flex lg:mt-0 text-custom-gray hover:text-purple-500 mr-4">
               <span className='flex flex-row'><img src={item.icon} alt={item.name} className="mr-1 h-6 w-6" />
-              {item.name}</span>
+              <span className='mob-hidden'>{item.name}</span></span>
             </a>
           </div>
         ))}
